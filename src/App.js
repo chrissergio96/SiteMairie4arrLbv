@@ -56,7 +56,6 @@ import ProtectedRoute from './Admin/ProtectedRoute.js';
 import AdminLogin from './Admin/AdminLogin.js';
 import ActualitesList from './Admin/ActualitesList.js';
 import ActualitesForm from './Admin/ActualitesForm.js';
-import AllNav from './Components/AllNav/AllNav.js';
 
 function App() {
   return (
@@ -64,7 +63,6 @@ function App() {
       <Router>
 
       <ScrollToTop />  {/* Ce composant s'assure que chaque navigation commence en haut */}
-      <AllNav/>
         <Routes>
         <Route path="/" element={<Splash />} /> 
         <Route path="/maire" element={<Maire />} /> 
