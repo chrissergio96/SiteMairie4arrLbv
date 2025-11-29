@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../Components/Navbar/Navbar';
+import AllNav from '../Components/AllNav/AllNav'
 import Header from '../Components/Header/Header';
 import Actualites from '../Components/Actualites/Actualites';
 import MotMaire from '../Components/MotMaire/MotMaire';
@@ -11,6 +12,7 @@ import BreakingNews from '../Components/BreakingNews/BreakingNews'
 function Accueil() {
   return (
     <div>
+            <AllNav/>
      <Navbar/>  
      <BreakingNews/>
      <Header/>
