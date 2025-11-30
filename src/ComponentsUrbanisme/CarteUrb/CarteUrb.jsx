@@ -1,10 +1,10 @@
 import React from 'react';
 import './CarteUrb.css';
 import canal from '../../Images/canal.jpg'; // Remplacez par le chemin correct de vos images
-import caniveau from '../../Images/caniveau.jpg';
-import pont from '../../Images/pont.jpg';
-import elec from '../../Images/elec.jpg';
-import canivau from '../../Images/caniveau.jpg';
+import caniveau from './ecologie.jpeg';
+import pont from './controle et regulation.jpeg';
+import elec from './permis de construire.jpeg';
+import canivau from './gestion cadastre.jpeg';
 import hj from '../../Images/hj.jpg';
 import Captureplanifurb from '../../Images/Capture planif urb.PNG';
 

@@ -69,7 +69,7 @@ export default function MediaCard1() {
           >
            Vous souhaitez vous mariez ?  <br />
             Suivez ces étapes simples pour une procédure rapide à la Mairie du
-            2e Arrondissement.
+            4e Arrondissement.
           </Typography>
         </CardContent>
         <CardActions>

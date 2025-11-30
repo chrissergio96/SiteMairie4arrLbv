@@ -1,0 +1,19 @@
+.pub-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.pub-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.pub-card img {
+  width: 100%;
+  display: block;
+}

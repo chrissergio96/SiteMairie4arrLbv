@@ -1,52 +1,50 @@
-import React, { useState, useEffect } from "react";
-import Carousel from "react-bootstrap/Carousel";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../../firebaseConf";
+// src/Components/Actualites/Actualites.js
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Actualites.css";
 
+const sampleData = [
+  {
+    id: "1",
+    titre: "La Mairie du bonheur a besoin d'une plage propre,  et ensemble....on aura notre plage propre...",
+    imageUrl: "https://scontent.flbv3-1.fna.fbcdn.net/v/t39.30808-6/468650441_1611718162753309_9197932230552368310_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeELZz9hX6Pdn-xq3VyZ0-a3yQGfItfkLkXJAZ8i1-QuRXI6GhmYdx-z95ojFKptMf1lg302Gr2RVOJQVdGyU-WN&_nc_ohc=C0uvkmt25fMQ7kNvwGKZJx-&_nc_oc=AdmKJkSiMM9B9tkrQu5Vbeoy2xVmOVfaLtSu_j5rCkjE2w2TwGfUPFrGXrP0f9DQNn8&_nc_zt=23&_nc_ht=scontent.flbv3-1.fna&_nc_gid=L3xZiVGtoShCDcRJnDT3rQ&oh=00_AfibVDAXDBnoH1HuQhtkXSHrypkgFbcxBCP2MqIp2d-o4g&oe=693210DD",
+  },
+  {
+    id: "2",
+    titre: "Port-Gentil : Houangni Ambouroue élu maire avec 100% des voix",
+    imageUrl: "https://gabonactu.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-29-at-11.29.36.jpeg"
+  },
+  {
+    id: "3",
+    titre: "Communication présidentielle : Au cœur de l’agenda d’Oligui Nguéma",
+    imageUrl: "https://gabonactu.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-29-at-11.29.36.jpeg"
+  },
+  {
+    id: "4",
+    titre: "Activités culturelles",
+    imageUrl: "https://gabonactu.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-29-at-11.29.36.jpeg"
+  }
+];
+
 const Actualites = () => {
-  const [actualites, setActualites] = useState([]);
   const navigate = useNavigate();
 
- const fetchActualites = async () => {
-  const querySnapshot = await getDocs(collection(db, "actualites"));
-  const data = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-
-  setActualites(
-    data.sort((a, b) => {
-      const dateA = a.date?.toDate ? a.date.toDate() : a.date || 0;
-      const dateB = b.date?.toDate ? b.date.toDate() : b.date || 0;
-      return dateB - dateA;
-    })
-  );
-};
-
-  useEffect(() => {
-    fetchActualites();
-  }, []);
-
   return (
- 
+    <div className="actualites-container">
+      <h2 className="actualites-title">Nos Projets</h2>
 
-    <div className="carousel-containeracc">
-           <div className="section-header">
-    <div className="bars">
-        <div className="line1"></div>
-        <div className="line2"></div>
-    </div>
-    <h1>Actualités</h1>
-</div>
-      <Carousel interval={3000}>
-        {actualites.map((actualite, index) => (
-          <Carousel.Item key={index} onClick={() => navigate(`/projet/${actualite.id}`)}>
-            <img className="d-block w-100" src={actualite.imageUrl} alt={`Slide ${index}`} />
-            <Carousel.Caption>
-              <h3>{actualite.titre}</h3>
-            </Carousel.Caption>
-          </Carousel.Item>
+      <div className="actualites-carousel">
+        {sampleData.map((actu) => (
+          <div
+            key={actu.id}
+            className="actualite-card"
+            onClick={() => navigate(`/actualites/${actu.id}`)}
+          >
+            <img src={actu.imageUrl} alt={actu.titre} className="actualite-image" />
+            <p className="actualite-titre">{actu.titre}</p>
+          </div>
         ))}
-      </Carousel>
+      </div>
     </div>
   );
 };

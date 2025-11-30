@@ -62,7 +62,7 @@ export default function MediaCard() {
           >
             Vous avez un acte de naissance à légaliser ?
             Suivez ces étapes simples pour une procédure rapide à la Mairie du
-            2e Arrondissement.
+            4e Arrondissement.
           </Typography>
         </CardContent>
         <CardActions>

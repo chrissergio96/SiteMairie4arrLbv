@@ -49,7 +49,7 @@ const Contact = () => {
                 <div className="card1al">
                 <Link to='/cdq'>
                 <div className='mereimg4'></div>
-                    <h2>CDQ</h2>
+                    <h2>Votre Mairie</h2>
                 </Link>
                 </div>
 
