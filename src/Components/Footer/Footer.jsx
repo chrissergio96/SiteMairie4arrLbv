@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Footer.css';
-import logo from '../../Images/logo maire 14.svg'; 
+import logo from './logo mairie 4arr.png'; 
 import log from '../../Images/whatsapp.svg'; 
 import lo from '../../Images/facebook.svg'; 
 import { Link } from 'react-router-dom';
@@ -77,8 +77,8 @@ const Footer = () => {
             <Link to='/technique'><li>Service Technique</li></Link>
             <Link to='/urbanisme'><li>Urbanisme</li></Link>
             <Link to='/agenda'><li>Agenda</li></Link>
-            <Link to='/cdq'><li>Chefs de quartiers et CDQ</li></Link>
-            <Link to='/hubmunicipal'><li>Hub Municipal</li></Link>
+            <Link to='/cdq'><li>Votre Mairie</li></Link>
+            <Link to='/hubmunicipal'><li>Activités/Evènement à venir</li></Link>
             <Link to='/galerie'><li>Galerie</li></Link>
           </ul>
         </div>

@@ -1,13 +1,8 @@
-.container1al{
-    justify-content: start;
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
 
-}
 .barreal{
-    width: 80%;
+    width: 100%;
     margin-top:2%;
+    padding-left:2%;
 }
 .trait3sal{
     width: 6%;
@@ -27,6 +22,10 @@
     text-align:start;
     font-size: 30px;
     font-weight: bold;
+       justify-content: start;
+    width:80%;
+    
+
     white-space: nowrap; /* Empêche le texte de se couper sur plusieurs lignes */
 
 }
@@ -35,7 +34,8 @@
     text-align: center;
     align-items:center;
     justify-content: center;
-    width: 100%;
+     justify-content: start;
+    width:90%;
 }
 
 
@@ -44,7 +44,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width:70%;
+    width:100%;
     margin: auto;
     margin-top:40px;
 }
@@ -74,7 +74,7 @@
 }
 .mereimg4{
     background-size: cover;
-    background-image: url('../../Images/CDQ.jpg');
+    background-image: url('../../Components/Header/mairie\ du\ 4e\ arr\ de\ lbv.jpg');
     border-radius: 8px;
     height: 70%;
 }
@@ -121,13 +121,20 @@
     .cards1-containeral {
         justify-content: space-around;
         align-items:center;
-        width: 90%;
+        width: 100%;
         display:block;
         margin-top: 5px;
         margin-left: auto;
         margin-right: auto;
         
     }
+    .contact-containeral {
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+     justify-content: start;
+    width:100%;
+}
     
     .container1al{
         margin-bottom: 3%;

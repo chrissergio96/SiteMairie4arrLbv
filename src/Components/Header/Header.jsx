@@ -1,10 +1,10 @@
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward'; 
 import { Link, useNavigate } from "react-router-dom"; // Importation de useNavigate
 import React, {  useState } from 'react';
 import Fuse from 'fuse.js'; // Importation de Fuse.js
 import backgroundVideo from './video.mp4'; // Importez votre fichier audio
+import AdsSidebar from '../AdsSidebar/AdsSidebar';
 
 
 // Images de la bannière défilante
@@ -157,10 +157,8 @@ const Header = () => {
                 Demande d'audience
             </a>
 </div>
+         <AdsSidebar/>
 
-
-
-          
         </div>
     );
 };

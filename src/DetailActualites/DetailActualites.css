@@ -1,0 +1,36 @@
+.detail-actualites-container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.detail-actualites-container h1 {
+    font-size: 32px;
+    color: #1B3D71;
+    margin-bottom: 20px;
+}
+
+.main-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.detail-text {
+    margin-bottom: 30px;
+}
+
+.detail-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.detail-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}

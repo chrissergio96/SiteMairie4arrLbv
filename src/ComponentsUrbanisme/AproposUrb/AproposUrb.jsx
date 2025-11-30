@@ -20,7 +20,7 @@ const AproposUrb= () => {
             
            <div className='texteurb'>
             <p>
-Le service urbanisme de la mairie accueille et conseille les particuliers et les constructeurs qui veulent construire ou effectuer des travaux dans la ville.
+Le service urbanisme de la Mairie accueille et conseille les particuliers et les constructeurs qui veulent construire ou effectuer des travaux dans la ville.
 Il gère les autorisations d'occupation des sols : permis de construire, déclaration de travaux, permis de lotir, certificat d'urbanisme, etc.</p>
            </div>
     </div>

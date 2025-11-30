@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../firebaseConf";
 import { collection, addDoc, doc, updateDoc } from "firebase/firestore";
-import './BreakingNewsList.css'
+import './BreakingNewsForm.css'
 
 const BreakingNewsForm = ({ editItem, onFinish }) => {
   const [text, setText] = useState("");

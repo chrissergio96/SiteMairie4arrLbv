@@ -22,7 +22,7 @@ const Actualitéscial = () => {
                     <div className="rectangle-blanc3">
                         
                         <ul>
-                       <li> Le service social de la Mairie du 2e Arrondissement accompagne les habitants dans leurs démarches sociales, en particulier les familles, les seniors et les personnes en difficulté.</li> <br />
+                       <li> Le service social de la Mairie du 4e Arrondissement accompagne les habitants dans leurs démarches sociales, en particulier les familles, les seniors et les personnes en difficulté.</li> <br />
                             <li>Il propose un soutien personnalisé, facilite l'accès aux aides sociales et collabore avec divers partenaires pour répondre aux besoins locaux .</li>
                         </ul>
                     

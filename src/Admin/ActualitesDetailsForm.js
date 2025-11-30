@@ -1,30 +1,31 @@
-// src/Admin/ActualitesForm.js
+// src/Admin/ActualitesDetailsForm.js
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { db, storage } from "../firebaseConf";
-import { doc, getDoc, addDoc, updateDoc, collection } from "firebase/firestore";
+import { doc, getDoc, setDoc, collection, addDoc, updateDoc } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
-const ActualitesForm = () => {
-  const { id } = useParams(); // id = actualité à modifier
+const ActualitesDetailsForm = () => {
+  const { id, detailId } = useParams(); // id = actualiteId
   const navigate = useNavigate();
-  const [titre, setTitre] = useState("");
+
+  const [contenu, setContenu] = useState("");
   const [imageFile, setImageFile] = useState(null);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (id) {
-      const fetchActualite = async () => {
-        const docRef = doc(db, "actualites", id);
+    if (detailId) {
+      const fetchDetail = async () => {
+        const docRef = doc(db, "actualitesDetails", detailId);
         const snapshot = await getDoc(docRef);
         if (snapshot.exists()) {
           const data = snapshot.data();
-          setTitre(data.titre || "");
+          setContenu(data.contenu || "");
         }
       };
-      fetchActualite();
+      fetchDetail();
     }
-  }, [id]);
+  }, [detailId]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,7 +35,7 @@ const ActualitesForm = () => {
       let imageUrl = "";
 
       if (imageFile) {
-        const storageRef = ref(storage, `actualites/${Date.now()}-${imageFile.name}`);
+        const storageRef = ref(storage, `actualitesDetails/${Date.now()}-${imageFile.name}`);
         const uploadTask = uploadBytesResumable(storageRef, imageFile);
         await new Promise((resolve, reject) => {
           uploadTask.on(
@@ -49,21 +50,23 @@ const ActualitesForm = () => {
         });
       }
 
-      if (id) {
-        const docRef = doc(db, "actualites", id);
+      if (detailId) {
+        const docRef = doc(db, "actualitesDetails", detailId);
         await updateDoc(docRef, {
-          titre,
+          actualiteId: id,
+          contenu,
           imageUrl: imageUrl || undefined,
         });
       } else {
-        await addDoc(collection(db, "actualites"), {
-          titre,
+        await addDoc(collection(db, "actualitesDetails"), {
+          actualiteId: id,
+          contenu,
           imageUrl: imageUrl || "",
           createdAt: new Date(),
         });
       }
 
-      navigate("/admin/actualites");
+      navigate(`/actualites/${id}`);
     } catch (error) {
       console.error(error);
       alert("Erreur lors de l'enregistrement");
@@ -74,11 +77,11 @@ const ActualitesForm = () => {
 
   return (
     <div>
-      <h2>{id ? "Modifier" : "Ajouter"} une actualité</h2>
+      <h2>{detailId ? "Modifier" : "Ajouter"} un détail d'actualité</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Titre</label>
-          <input type="text" value={titre} onChange={(e) => setTitre(e.target.value)} required />
+          <label>Contenu (sauts de ligne autorisés)</label>
+          <textarea value={contenu} onChange={(e) => setContenu(e.target.value)} rows={6} required />
         </div>
 
         <div>
@@ -92,4 +95,4 @@ const ActualitesForm = () => {
   );
 };
 
-export default ActualitesForm;
+export default ActualitesDetailsForm;
