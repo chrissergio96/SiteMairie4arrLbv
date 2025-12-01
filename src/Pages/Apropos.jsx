@@ -10,7 +10,7 @@ function Apropos() {
     return (
       <div>
         <Navbar/>
-        <Aproposde/>
+        <Aproposde/><br/>
         <BackButtonUrb/>
         <Contact/>
         <Footer/>
