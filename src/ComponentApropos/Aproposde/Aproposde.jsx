@@ -90,7 +90,7 @@ const Aproposde = () => {
 
           <div className="team-member">
             <img src="/images/service_social.jpg" alt="Service Social" />
-            <h3>Chef de section Service Social <br/><br/><br/> <strong> Jacqueline NZIENGUI Epse NZIENGUI</strong>
+            <h3>Chef de section Service Social <br/><br/><br/> <strong> Jacque</strong>
             </h3> 
             <p>Soutien aux familles et programmes d’aide sociale.</p>
           </div>
@@ -98,7 +98,7 @@ const Aproposde = () => {
 
           <div className="team-member">
             <img src="/images/etat_civil.jpg" alt="Assistant Technique" />
-            <h3>Assistant Technique <br/><br/><br/> <strong> Jovan MOKOUKOU KONDJA </strong>
+            <h3>Assistant Technique <br/><br/><br/> <strong> Jeremie</strong>
             </h3>
             <p>Gestion des infrastructures publiques et des travaux.</p>
           </div>

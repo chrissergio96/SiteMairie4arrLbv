@@ -8,13 +8,14 @@ const emergencyNumbers = [
       { label: 'Tel', number: '011.56.27.75' },
       { label: 'Tel', number: '077.63.93.63' },
       { label: 'Tel', number: '062.93.98.48' },
-      { label: 'Centre d\'appels', number: '18', extra: ' (numéro vert, fixe uniquement, Port-Gentil)' }
     ]
   },
   {
     category: 'Commissariat Central',
     numbers: [
-      { label: 'Numéro d\'urgence', number: '011.55.29.12' }
+      { label: 'N* Urgence', number: '011 72 00 37' },
+      { label: 'B.P', number: '571' }
+
     ]
   },
   {
@@ -26,7 +27,7 @@ const emergencyNumbers = [
   {
     category: 'S.e.e.g',
     numbers: [
-      { label: 'Allo Fuite', number: '011.76.12.83' },
+      { label: 'Tel', number: '8586' },
       { label: 'Intervention', number: '011.76.73.73' }
     ]
   }
