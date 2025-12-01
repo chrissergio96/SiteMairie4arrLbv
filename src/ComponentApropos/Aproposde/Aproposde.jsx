@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './Aproposde.css';
-import DelegueImage from '../../Images/Delegue.jpg';
-import GeneralImage from '../../Images/general.jpg';
-import CCImage from '../../Images/Chris IGANA.jpg';
-import ChristelleImage from '../../Images/Christelle.jpg';
-import JeanneImage from '../../Images/Jeanne.jpg';
-import FranciscaImage from '../../Images/Francisca.jpg'
+import DelegueImage from './images maire 4e arr lbv.jpeg';
+import GeneralImage from './1er maire adjoint.jpg';
+import CCImage from './2e maire adjoint.jpg';
+// import ChristelleImage from '../../Images/Christelle.jpg';
+// import JeanneImage from '../../Images/Jeanne.jpg';
+// import FranciscaImage from '../../Images/Francisca.jpg'
 
 
 const Aproposde = () => {
@@ -36,29 +36,29 @@ const Aproposde = () => {
           {/* Maire */}
           <div className="team-member">
           <img src={DelegueImage} alt="Maire" onMouseEnter={() => handleMouseEnter(DelegueImage)} onMouseLeave={handleMouseLeave} />
-          <h3>Maire :<br></br><br></br><strong> Boubakar NGOUWA GUINGO MAYAKI</strong></h3>
-            <p>Responsable de la gestion générale du 2e Arrondissement.</p>
+          <h3>Maire :<br></br><br></br><strong> Nicaise SICKOUT IGUENDJA</strong></h3>
+            <p>Responsable de la gestion générale du 4e Arrondissement.</p>
           </div>
 
           {/* Délégué spécial adjoint */}
           <div className="team-member">
             <img src={GeneralImage} alt="Délégué Spécial Adjoint" onMouseEnter={() => handleMouseEnter(GeneralImage)} onMouseLeave={handleMouseLeave}/>
-            <h3>1er Maire Adjoint:<br></br><br></br><strong>Le Commandant ONDO ZUE Bertin </strong>  
+            <h3>1er Maire Adjoint:<br></br><br></br><strong>MABIKA Patrick Emery </strong>  
                
             </h3>
-            <p>Responsable adjoint des affaires sociales et du développement local du 2e Arrondissement.</p>
+            <p>Responsable adjoint des affaires sociales et du développement local du 4e Arrondissement.</p>
           </div>
 
           
           <div className="team-member">
             <img src={CCImage} alt="Cabinet" onMouseEnter={() => handleMouseEnter(CCImage)} onMouseLeave={handleMouseLeave} />
-            <h3>2e Maire Adjoint :<br></br><br></br><strong>Chris IGANA </strong>
+            <h3>2e Maire Adjoint :<br></br><br></br><strong>ONGOUORI TIDJANI Yves Kenny </strong>
             </h3>
             <p>Coordination des activités administratives.</p>
           </div>
 
           
-
+{/* 
            <div className="team-member">
             <img src={FranciscaImage} alt="Secretaire" onMouseEnter={() => handleMouseEnter(FranciscaImage)} onMouseLeave={handleMouseLeave} />
             <h3>Sécrétaire particulière du Délégué Spécial: <br/><br/><br/> <strong> Joel AYAMINE REMBANGOUET</strong>
@@ -86,7 +86,7 @@ const Aproposde = () => {
             </h3>
             <p>Gestion des actes de naissance, mariage, et décès.</p>
           </div>
-             
+              */}
 
           <div className="team-member">
             <img src="/images/service_social.jpg" alt="Service Social" />
