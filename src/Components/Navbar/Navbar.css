@@ -60,7 +60,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 5px;
     text-shadow: 1px 2px 2px #1B3D71;
-  animation: fadeSlideDown 1.2s forwards, breathing 4s ease-in-out 1.2s infinite;
+  animation: fadeSlideDown 1.2s forwards,  ease-out 1.2s infinite;
 }
 
 @keyframes breathing {
