@@ -9,7 +9,7 @@ const Headercdq = () => {
             <div className="boutton-containerc">
                 <div className='butc'>
              <button className="bouttonc">ACCUEIL<ArrowForwardIcon className="arrow-icon" />CHEFS DE QUARTIER ET CDQ</button>
-             <h1>CHEFS DE QUARTIER ET CDQ</h1> 
+             <h1>VOTRE MAIRIE</h1> 
             </div>
             </div>
         </div>

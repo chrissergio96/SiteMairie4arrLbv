@@ -7,9 +7,8 @@ const Textbas = () => {
         <div className="textbas-container">
 
                 <div className="textbas-texts">
-                    <p>
-                     *Grace a l’implication du CDQ , le 2e Arrondissement de Port-Gentil se transforme chaque 
-                    jour en un lieu plus sain,plus sur et plus agréable à vivre pour tous.*
+                    <p> 
+                        Le sujet du jour
                     </p>
                 </div>
         </div>
