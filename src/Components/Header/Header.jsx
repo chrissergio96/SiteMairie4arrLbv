@@ -147,7 +147,7 @@ const Header = () => {
       <Link to="/Servicesocial">Service Social</Link>
       <Link to="/urbanisme">Urbanisme</Link>
       <Link to="/agenda">Agenda</Link>
-      <Link to="/cdq">Chefs de Quartiers & CDQ</Link>
+      <Link to="/cdq">Votre Mairie</Link>
       <Link to="/mariage">Mariage</Link>
       <Link to="/galerie">Galerie</Link>
     </div>

@@ -41,7 +41,7 @@ const Contactcdq = () => {
                 </div>
                 <div className="card1al">
                     <img src={CDQImage} alt="CDQ" />
-                    <h2>CDQ</h2>
+                    <h2>Votre Mairie</h2>
                 </div>
             </div>
         </div>
