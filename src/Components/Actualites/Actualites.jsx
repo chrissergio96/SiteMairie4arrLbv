@@ -31,7 +31,7 @@ const Actualites = () => {
 
   return (
     <div className="actualites-container">
-      <h2 className="actualites-title">Nos Projets</h2>
+      <h2 className="actualites-title">A la Une</h2>
 
       <div className="actualites-carousel">
         {sampleData.map((actu) => (
