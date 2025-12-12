@@ -1,5 +1,5 @@
 .mairiea {
-  height: 100vh;
+  height: 35%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -320,7 +320,7 @@
     
   }
   .mairiea {
-    height: 80vh;
+    height: 72vh;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

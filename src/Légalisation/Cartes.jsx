@@ -37,7 +37,7 @@ function Cartes() {
     <div className="cardAB">
         <h2>Acte de naissance</h2>
         <p> Pour légaliser un acte de naissance , il faut founir:
-        <strong>
+        <strong> 
           <p>- Original de l'acte de naissance ;</p>
           <p>- 1 copie de l'acte de naissance ;</p>
           <p>- 1 timbre de 1000f .</p>

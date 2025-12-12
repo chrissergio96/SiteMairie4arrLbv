@@ -89,7 +89,7 @@ const Footer = () => {
             <a href="https://wa.me/24160371461">
               <img src={log} alt="whatsapp" />
             </a>
-            <a href="https://www.facebook.com/Mairie2eArrondissementPortGentil">
+            <a href="https://www.facebook.com/Mairie4emeLBV?locale=fr_FR">
               <img src={lo} alt="facebook" />
             </a>
           </div>

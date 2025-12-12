@@ -9,7 +9,6 @@
   font-weight: bold;
   margin-bottom: 5%;
   text-align: center;
-  text-decoration: underline;
 }
 
 .actualites-carousel {
@@ -52,10 +51,9 @@
 }
 
 .actualites-title {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 8%;
   text-align: center;
-  text-decoration: underline;
 }
     }

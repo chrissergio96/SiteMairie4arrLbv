@@ -33,7 +33,7 @@ const Footer = () => {
             <Link to='/technique'><li>Service Technique</li></Link>
             <Link to='/urbanisme'><li>Urbanisme</li></Link>
             <Link to='/agenda'><li>Agenda</li></Link>
-            <Link to='/cdq'><li>Chefs de quartiers et CDQ</li></Link>
+            <Link to='/mairie'><li>Votre Mairie</li></Link>
             <Link to='/hubmunicipal'><li>Hub Municipal</li></Link>
             <Link to='/galerie'><li>Galerie</li></Link>
           </ul>
@@ -45,7 +45,7 @@ const Footer = () => {
 
           <a href="https://www.facebook.com/Mairie2eArrondissementPortGentil">
           <img src={log} alt="whatsapp" /></a>
-          <a href="https://www.facebook.com/Mairie2eArrondissementPortGentil">
+          <a href="https://www.facebook.com/Mairie4emeLBV?locale=fr_FR">
           <img src={lo} alt="facebook" /></a>
 
           </div>
