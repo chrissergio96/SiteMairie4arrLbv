@@ -95,7 +95,7 @@ const Faq = () => {
 
         <h2>3. Collecte des Déchets et Environnement</h2>
         <div>
-            <h3>Q : Quand les déchets sont-ils collectés dans le 2e Arrondissement ?</h3>
+            <h3>Q : Quand les déchets sont-ils collectés dans le 4e Arrondissement ?</h3>
             <p><strong>R :</strong> La collecte des déchets se fait tous les jours sauf le dimanche. Assurez-vous de sortir vos poubelles de 18h à 21h.</p>
         </div>
         <div>

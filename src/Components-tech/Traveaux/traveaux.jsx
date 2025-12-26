@@ -19,7 +19,7 @@ function CenterMode() {
         <div>
           <img 
           src={require('../../Images/caniveau.jpg')} 
-           alt="" />
+           alt="" /> 
          </div>
        
         <div>

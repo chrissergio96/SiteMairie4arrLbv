@@ -3,7 +3,6 @@ import Navbar from '../Components/Navbar/Navbar';
 import Header from '../Components-tech/Header/Headertech';
 import Text from '../Components-tech/Text/Text';
 import Profil from '../Components-tech/Profil/Profil';
-import Traveaux from '../Components-tech/Traveaux/traveaux';
 import BackButtonUrb from '../ComponentsUrbanisme/BackButtonUrb/BackButtonUrb';
 import Contact from '../Components/Contact/Contact';
 import Footer from '../Components/Footer/Footer';
@@ -17,7 +16,6 @@ function Technique() {
       <Header/>
       <Text/>
       <Profil/>
-      <Traveaux/>
       <BackButtonUrb/>
       <Contact/>
       <Footer/>
