@@ -30,15 +30,14 @@
   }
   /* BREAKING NEWS - MODERNE TICKER */
   .news-ticker {
-    background-color: #f8f9fa; /* un fond doux */
-    color: red;/* rouge chic */
+    background-color: wheat; /* un fond doux */
+    color: gray;/* rouge chic */
     padding: 0.6em 1em;
     font-weight: 600;
     text-transform: none;
     display: flex;
     align-items: center;
-    gap: 15px;
-    border-bottom: 1px solid #e5e7eb;
+    gap: 10px;
     position: relative;
     z-index: 999;
     box-shadow: 0 2px 4px rgba(0,0,0,0.04);
@@ -47,13 +46,11 @@
   .ticker-label {
     font-weight: bold;
     white-space: nowrap;
-    background-color: red;
-    color: white;
-    padding: 6px ;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    font-size: 14px;
-    letter-spacing: 0.5px;
+    background-color: white;
+    color: red;
+    padding: 2px ;
+    border-radius: 8px;
+    font-size: 8px;
     text-align: center;
   }
   
@@ -105,7 +102,7 @@
 }
 
 .ticker-content {
-  animation: scroll-left 25s linear infinite;
+  animation: scroll-left 45s linear infinite;
 }
 
   
@@ -117,7 +114,7 @@
     object-fit: cover;
     margin-right: 8px;
     vertical-align: middle;
-    border: 2px solid red;/* Rouge chic */
+    border: 2px solid white;/* Rouge chic */
   }
   
   .ticker-item {
@@ -180,8 +177,8 @@
   
   
   .ticker-label {
-    font-size: 12px;
-    padding: 4px 8px;
+    font-size: 8px;
+    padding: 2px 4px;
   }
 
   .ticker-item {

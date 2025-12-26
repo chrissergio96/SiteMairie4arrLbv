@@ -19,7 +19,7 @@ const AllNav = () => {
       <div className="allnav-message-box">
         <div className="allnav-marquee">
           <AlertCircle className="allnav-icon" size={18} />
-          <span className="blink">ALERTE :</span> 📢 Bienvenue sur notre site officiel de la Mairie du 4e Arrondissement de Libreville.
+          <span className="blink"></span> 📢 Bienvenue sur le site officiel de la Mairie du 4e Arrondissement de Libreville.
         </div>
       </div>
     </div>

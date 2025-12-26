@@ -25,7 +25,7 @@ const BreakingNews = () => {
       <section className="breaking-news" data-aos="fade-down">
         <div className="news-ticker">
           <span className="flash-icon"></span>
-          <span className="ticker-label"><h4>COMMUNIQUE :</h4></span>
+          <span className="ticker-label"><h4>Communiqué :</h4></span>
           <div className="ticker-wrapper">
             <div className="ticker-content">
       {[...breakingNews,].map((item, index) => (

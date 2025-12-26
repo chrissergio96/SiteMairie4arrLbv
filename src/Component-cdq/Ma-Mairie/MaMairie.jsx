@@ -1,5 +1,5 @@
 import React from 'react';
-import './Comitecdq.css';
+import './MaMairie.css';
 
 const Textebon = ({ children }) => {
   return (

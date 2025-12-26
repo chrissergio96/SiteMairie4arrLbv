@@ -1,6 +1,6 @@
 .mot-maire-container {
-    width: 90%;
-    padding: 20px 0;
+    width: 94%;
+    padding: 10px 0;
     text-align: center;
     justify-content:center;
    
@@ -8,7 +8,7 @@
 
 .maire-section {
   width: 100%;
-  padding: 50px 20px;
+  padding: 20px 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -135,8 +135,8 @@
 
 /* Conteneur général */
 .adjoints-section {
-  max-width: 1200px;
-  padding: 0 20px;
+  width: 94%;
+  padding: 15px;
 }
 
 /* Titre principal */

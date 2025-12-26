@@ -54,7 +54,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-left">
-          <Link to='/'>
+          <Link to='/accueil'>
             <img src={logo} alt="Logo Mairie" />
           </Link>
         </div>
@@ -77,7 +77,7 @@ const Footer = () => {
             <Link to='/technique'><li>Service Technique</li></Link>
             <Link to='/urbanisme'><li>Urbanisme</li></Link>
             <Link to='/agenda'><li>Agenda</li></Link>
-            <Link to='/cdq'><li>Votre Mairie</li></Link>
+            <Link to='/mairie'><li>Votre Mairie</li></Link>
             <Link to='/hubmunicipal'><li>Activités/Evènement à venir</li></Link>
             <Link to='/galerie'><li>Galerie</li></Link>
           </ul>

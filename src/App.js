@@ -23,7 +23,6 @@ import AutorisationsUrbanisme from './Pages/AutorisationsUrbanisme.jsx';
 import TravauxUrbanisme from './Pages/TravauxUrbanisme.jsx';
 import Technique from './Pages/Technique.jsx';
 import Mariage from './Pages/Mariage.jsx';
-import Cdq from './Pages/Cdq.jsx';
 import Apropos from './Pages/Apropos.jsx';
 import Servicesocial from './Pages/Servicesocial.jsx';
 import Aidesocials from './Pages/Aidesocials.jsx';
@@ -48,6 +47,7 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import Mairie from './Pages/Mairie.jsx';
 
 function App() {
   return (
@@ -71,7 +71,7 @@ function App() {
           <Route path="/travauxurbanisme" element={<TravauxUrbanisme />} />
           <Route path="/technique" element={<Technique />} />
           <Route path="/mariage" element={<Mariage />} />
-          <Route path="/mairie" element={<Cdq />} />
+          <Route path="/mairie" element={<Mairie />} />
           <Route path="/apropos" element={<Apropos />} />
           <Route path="/projet" element={<Projet />} />
           <Route path="/numerosutiles" element={<Numerosutiles />} />
