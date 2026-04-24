@@ -7,7 +7,7 @@ const PubDroite = () => {
 
  <div className="pub-card">
         <a data-no-instant="1" href="http://www.gabonews.com/fr/radio/" rel="noopener" class="a2t-link" aria-label="FLY-GABON">
-        <ipngmg src="https://www.gabonews.com/IMG/gif/gabonews-radio-2.gif" alt="Publicité" />
+        <img src="https://www.gabonews.com/IMG/gif/gabonews-radio-2.gif" alt="Publicité" />
         </a>
       </div>
        <div className="pub-card">
